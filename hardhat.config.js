@@ -12,4 +12,19 @@ module.exports = {
       //gasPrice: 1000000000,
     },
   },
+  etherscan: {
+    apiKey: {
+     "base-goerli": [process.env.BASE_API_KEY]
+    },
+    customChains: [
+      {
+        network: "base-goerli",
+        chainId: 84531,
+        urls: {
+         apiURL: "https://api-goerli.basescan.org/api",
+         browserURL: "https://goerli.basescan.org"
+        }
+      }
+    ]
+  },
   };
